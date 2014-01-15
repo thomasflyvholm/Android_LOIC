@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#cc0000"
+        android:gravity="center"
+        android:text="WARNING!"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:src="@drawable/warning" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:textColor="#ffffff"
+        android:text="\n# LOIC 을 사용함으로써 발생되는 모든 일은 \n   사용자가 책임을 지며 이에 대해 약속합니다.\n\n# 이 어플리케이션은 서버에 \n   트래픽 테스트를 목적으로 만들어 졌으며 \n   공부용으로 사용하시기 바랍니다.\n\n   Edit by Codejune / Origin is Mohammad ADIB\n" />
+
+    <CheckBox
+        android:id="@+id/warningCB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:checked="true"
+        android:background="#33b5e5"
+        android:text="													체크 시에 이 메세지를 다시 보여줍니다."
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/continueTV"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/warningCB"
+        android:background="#99cc00"
+        android:gravity="center"
+        android:text="동의 후 계속하기"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
